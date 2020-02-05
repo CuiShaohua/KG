@@ -4,7 +4,7 @@
 
 ## HMM 算法
 由于仓库中已有关于HMM算法的详细展开说明，我们不在这里啰嗦的再次表达，直接看下对应的公式推导。    
-![Image text](https://www.zhihu.com/equation?tex=%5Cbegin%7Bequation%7D+%5Cbegin%7Bsplit%7D+Pr%28T%5Cmid+W%29+%26%3D+%5Cfrac%7BPr%28W%5Cmid+T%29%2APr%28T%29%7D%7BPr%28W%29%7D%5C%5C+Pr%28W%2CT%29+%26%3D++Pr%28W%5Cmid+T%29%2APr%28T%29%5C%5C+++%26%3D+%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DPr%28w_i%5Cmid+T%29%2APr%28T%29%5C%5C+++%26%3D+%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DPr%28w_i%5Cmid+t_i%29%2APr%28T%29%5C%5C+++%26%3D+%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DPr%28w_i%5Cmid+t_i%29%2APr%28t_i%5Cmid+t_%7Bi-1%7D%29+%5Cend%7Bsplit%7D+%5Cend%7Bequation%7D)  
+![Image text](https://github.com/CuiShaohua/KG/blob/master/images/equation01.svg)  ![Image text](https://github.com/CuiShaohua/KG/blob/master/images/equation02.svg)
 Bayes公式和联合概率。--W是观测序列（输入的单词序列），T是隐藏状态（代表输出词性序列）   
 
 词性标注的任务（或者NER任务）的目的就是为了求解这样的一个概率，而对于HMM来讲，这个概率需要满足3个假设条件，我们且看：   
